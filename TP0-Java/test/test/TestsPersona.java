@@ -55,5 +55,15 @@ public class TestsPersona {
 		Assert.assertEquals(persona.getCantidadDeComidas(), 2);
 	}
 	
+	@Test
+	public void ComePastillaYNormalizaColesterol(){
+		Persona persona = new Persona();
+		Comida tocino = new Tocino();
+		
+		persona.comer(tocino);
+		persona.tomarPastilla();
+		
+		Assert.assertTrue(persona.estaBien());
+	}
 	
 }

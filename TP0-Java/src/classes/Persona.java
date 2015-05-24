@@ -31,5 +31,10 @@ public class Persona {
 			
 		return estaBien;
 	}
+
+	public void tomarPastilla() {
+		colesterol = 200;
+		
+	}
 	
 }
